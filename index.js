@@ -25,7 +25,6 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).json({result: 'success'});
 });
 */
-app.listen(port);
 //not sure if this can be wrtten here  (part2 6/8)
 app.get('/', (req, res) => {
     const pool = openDb();
@@ -72,3 +71,4 @@ app.delete('/delete/:id', (req, res) => __awaiter(void 0, void 0, void 0, functi
         res.status(200).json({ id: id });
     });
 }));
+app.listen(port);

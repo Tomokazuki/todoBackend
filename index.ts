@@ -15,7 +15,6 @@ app.get('/', (req: Request, res: Response) => {
 });
 */
 
-app.listen(port)
 
 
 //not sure if this can be wrtten here  (part2 6/8)
@@ -77,3 +76,5 @@ app.delete('/delete/:id', async(req: Request, res: Response) => {
         res.status(200).json({id: id})
      })
 })
+
+app.listen(port)
